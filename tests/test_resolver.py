@@ -1,13 +1,13 @@
 import tempfile
 import pytest
 
-from resolver.file_contents import FileContents
+from resolver.minify_file_contents import MinifyFileContents
 
 
-class TestFileContentsResolver(object):
+class TestMinifyFileContentsResolver(object):
 
     def setup_method(self, test_method):
-        self.file_contents_resolver = FileContents(
+        self.file_contents_resolver = MinifyFileContents(
             argument=None
         )
 
