@@ -1,4 +1,5 @@
 from sceptre.resolvers import Resolver
+from jsmin import jsmin
 
 class MinifyFileContents(Resolver):
     """
@@ -18,6 +19,8 @@ class MinifyFileContents(Resolver):
         """
         try:
             with open(self.argument, "r") as file:
+                if self.argument.endswith('.js'):
+                    return jsmin(file.read())
                 return file.read()
         except (EnvironmentError, TypeError) as e:
             raise e

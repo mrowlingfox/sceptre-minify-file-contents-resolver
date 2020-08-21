@@ -26,6 +26,7 @@ with open("README.md") as readme_file:
 
 install_requirements = [
     "packaging==16.8",
+    "jsmin==2.2.2"
 ]
 
 test_requirements = [
