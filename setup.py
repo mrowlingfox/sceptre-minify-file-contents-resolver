@@ -8,11 +8,11 @@ __version__ = "0.0.1"
 # lowercase, use `-` as separator.
 RESOLVER_NAME = 'sceptre-minify-file-contents-resolver'
 # the resolver call in sceptre e.g. !command_name.
-RESOLVER_COMMAND_NAME = 'minify-file-contents'
+RESOLVER_COMMAND_NAME = 'minify_file_contents'
 # do not change. Rename resolver/resolver.py to resolver/{RESOLVER_COMMAND_NAME}.py
 RESOLVER_MODULE_NAME = 'resolver.{}'.format(RESOLVER_COMMAND_NAME)
 # CamelCase name of resolver class in resolver.resolver.
-RESOLVER_CLASS = 'MinifyContents'
+RESOLVER_CLASS = 'MinifyFileContents'
 # One line summary description
 RESOLVER_DESCRIPTION = 'Read and minify file contents'
 # if multiple use a single string with comma separated names.
