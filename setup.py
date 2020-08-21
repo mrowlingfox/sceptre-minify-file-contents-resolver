@@ -6,19 +6,19 @@ __version__ = "0.0.1"
 # https://github.com/Sceptre/project/wiki/sceptre-resolver-template
 
 # lowercase, use `-` as separator.
-RESOLVER_NAME = 'sceptre-resolver-template'
+RESOLVER_NAME = 'sceptre-minify-contents-resolver'
 # the resolver call in sceptre e.g. !command_name.
-RESOLVER_COMMAND_NAME = 'custom_resolver'
+RESOLVER_COMMAND_NAME = 'minify-contents'
 # do not change. Rename resolver/resolver.py to resolver/{RESOLVER_COMMAND_NAME}.py
 RESOLVER_MODULE_NAME = 'resolver.{}'.format(RESOLVER_COMMAND_NAME)
 # CamelCase name of resolver class in resolver.resolver.
-RESOLVER_CLASS = 'CustomResolver'
+RESOLVER_CLASS = 'MinifyContents'
 # One line summary description
-RESOLVER_DESCRIPTION = ''
+RESOLVER_DESCRIPTION = 'Read and minify file content'
 # if multiple use a single string with comma separated names.
-RESOLVER_AUTHOR = 'Sceptre'
+RESOLVER_AUTHOR = 'Mitchell Rowling'
 # if multiple use single string with commas.
-RESOLVER_AUTHOR_EMAIL = 'sceptre@cloudreach.com'
+RESOLVER_AUTHOR_EMAIL = 'mitchell.rowling@foxsports.com.au'
 RESOLVER_URL = 'https://github.com/sceptre/{}'.format(RESOLVER_NAME)
 
 with open("README.md") as readme_file:

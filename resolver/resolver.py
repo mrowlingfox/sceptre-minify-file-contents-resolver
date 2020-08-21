@@ -1,9 +1,9 @@
 from sceptre.resolvers import Resolver
 
 
-class CustomResolver(Resolver):
+class MinifyContents(Resolver):
     def __init__(self, *args, **kwargs):
-        super(CustomResolver, self).__init__(*args, **kwargs)
+        super(MinifyContents, self).__init__(*args, **kwargs)
 
     def resolve(self):
         """
